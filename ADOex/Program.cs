@@ -20,7 +20,7 @@ namespace ADOex
                 if ((Int64)count <= 0)
                 {
                     var CreateTableCmd = connection.CreateCommand();
-                    CreateTableCmd.CommandText = "Create table People (ID integer AUTOINCREMENT PKEY UNIQUE, FirstName TEXT,LastName TEXT)";
+                    CreateTableCmd.CommandText = "Create table People (ID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, FirstName TEXT,LastName TEXT)";
                     CreateTableCmd.ExecuteNonQuery();
                 }
 
